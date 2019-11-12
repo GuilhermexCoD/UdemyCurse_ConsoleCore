@@ -1,0 +1,19 @@
+﻿using System;
+using GameTOP.Lib;
+
+namespace GameTOP
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var jogo = new JogoFODA(
+                new Player2(),
+                new Player1("Guilherme")    
+            );
+            Console.Write("Start Game \n");
+            jogo.InitializeGame();
+        }
+    }
+
+}
